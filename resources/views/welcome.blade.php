@@ -37,7 +37,7 @@
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                             <li class="uk-nav-header">YOUR ACCOUNT</li>
-                                            <li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+                                            <li><a href="#"><span data-uk-icon="icon: info"></span> Profile</a></li>
                                             <li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
                                             <li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
                                             <li class="uk-nav-divider"></li>
