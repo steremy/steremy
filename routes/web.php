@@ -10,11 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'PagesController@home')->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('products', function () {
+    return App\Product::paginate(4);
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/index', 'DashboardController@index')->name('index');
+
+Route::resource('categories', 'CategoriesController');
+
+Route::resource('products', 'ProductsController');

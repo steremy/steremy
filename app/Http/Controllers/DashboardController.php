@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Product;
 use Illuminate\Http\Request;
-
-class HomeController extends Controller
+use Illuminate\Support\Facades\Auth;
+class DashboardController extends Controller
 {
-    /**
+	    /**
      * Create a new controller instance.
      *
      * @return void
@@ -21,8 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('home');
-    }
+
+    public function index(){
+
+   	return view('index')
+   			->with('products_count', Product::all()->count());
+   }
 }
